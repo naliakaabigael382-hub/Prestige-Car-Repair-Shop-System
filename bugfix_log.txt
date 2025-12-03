@@ -38,3 +38,4 @@ Bug Fix: fix: Fix backup file corruption error - Mon Apr  6 21:30:58 EAST 2026
 Bug Fix: fix: Resolve Spring Boot Actuator endpoint error - Mon Apr  6 21:31:01 EAST 2026
 Bug Fix: fix: Fix metrics export configuration error - Mon Apr  6 21:31:04 EAST 2026
 Bug Fix: fix: Final Spring Boot version error fix - v3.4.3 - Mon Apr  6 21:31:06 EAST 2026
+Bug Fix: fix: Resolve Spring Boot version compatibility error - Mon Apr  6 21:35:06 EAST 2026
