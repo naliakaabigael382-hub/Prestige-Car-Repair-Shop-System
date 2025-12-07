@@ -1,2 +1,3 @@
 Bug Fix: fix: Resolve Spring Boot version compatibility error - Mon Apr  6 21:29:27 EAST 2026
 Bug Fix: fix: Fix Hibernate dialect configuration error - Mon Apr  6 21:29:30 EAST 2026
+Bug Fix: fix: Resolved Java 21 LTS compatibility issues - Mon Apr  6 21:29:32 EAST 2026
