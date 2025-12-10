@@ -2,3 +2,4 @@ Feature: feat: Initialize Spring Boot 3.4.0 project with Maven - Mon Apr  6 21:2
 Feature: feat: Configure MySQL database connection - Mon Apr  6 21:29:28 EAST 2026
 Feature: feat: Create base entity classes (Customer, Vehicle) - Mon Apr  6 21:29:31 EAST 2026
 Feature: feat: Implement JWT authentication with Spring Security - Mon Apr  6 21:29:33 EAST 2026
+Feature: feat: Add CORS configuration for Vue.js integration - Mon Apr  6 21:29:35 EAST 2026
