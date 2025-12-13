@@ -43,3 +43,4 @@ Bug Fix: fix: Fix Hibernate dialect configuration error - Mon Apr  6 21:35:08 EA
 Bug Fix: fix: Resolved Java 21 LTS compatibility issues - Mon Apr  6 21:35:11 EAST 2026
 Bug Fix: fix: Fix Spring Security config bean definition error - Mon Apr  6 21:35:13 EAST 2026
 Bug Fix: fix: Resolve Jackson JSON parsing error in REST API - Mon Apr  6 21:35:15 EAST 2026
+Bug Fix: fix: Fix @Transactional rollback error - Mon Apr  6 21:35:18 EAST 2026
