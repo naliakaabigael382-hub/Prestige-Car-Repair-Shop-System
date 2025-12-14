@@ -41,3 +41,4 @@ Feature: feat: Create base entity classes (Customer, Vehicle) - Mon Apr  6 21:35
 Feature: feat: Implement JWT authentication with Spring Security - Mon Apr  6 21:35:12 EAST 2026
 Feature: feat: Add CORS configuration for Vue.js integration - Mon Apr  6 21:35:14 EAST 2026
 Feature: feat: Create Customer CRUD REST endpoints - Mon Apr  6 21:35:17 EAST 2026
+Feature: feat: Add validation and exception handling - Mon Apr  6 21:35:19 EAST 2026
