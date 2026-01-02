@@ -5,3 +5,4 @@ Feature: feat: Implement JWT authentication with Spring Security - Mon Apr  6 21
 Feature: feat: Add CORS configuration for Vue.js integration - Mon Apr  6 21:29:35 EAST 2026
 Feature: feat: Create Customer CRUD REST endpoints - Mon Apr  6 21:29:38 EAST 2026
 Feature: feat: Add validation and exception handling - Mon Apr  6 21:29:40 EAST 2026
+Feature: feat: Create Vehicle management component in Vue - Mon Apr  6 21:29:42 EAST 2026
