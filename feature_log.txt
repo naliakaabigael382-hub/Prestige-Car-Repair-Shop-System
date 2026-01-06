@@ -7,3 +7,4 @@ Feature: feat: Create Customer CRUD REST endpoints - Mon Apr  6 21:29:38 EAST 20
 Feature: feat: Add validation and exception handling - Mon Apr  6 21:29:40 EAST 2026
 Feature: feat: Create Vehicle management component in Vue - Mon Apr  6 21:29:42 EAST 2026
 Feature: feat: Implement repair order service layer - Mon Apr  6 21:29:45 EAST 2026
+Feature: feat: Add repair order form with dynamic pricing - Mon Apr  6 21:29:47 EAST 2026
