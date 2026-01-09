@@ -47,3 +47,4 @@ Bug Fix: fix: Fix @Transactional rollback error - Mon Apr  6 21:35:18 EAST 2026
 Bug Fix: fix: Fix CORS policy error after deployment - Mon Apr  6 21:35:22 EAST 2026
 Bug Fix: fix: Resolve MySQL syntax error in custom query - Mon Apr  6 21:35:25 EAST 2026
 Bug Fix: fix: Fix LazyInitializationException with @EntityGraph - Mon Apr  6 21:35:27 EAST 2026
+Bug Fix: fix: Resolve enum mapping error in JPA - Mon Apr  6 21:35:29 EAST 2026
