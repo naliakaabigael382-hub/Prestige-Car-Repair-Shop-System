@@ -46,3 +46,4 @@ Feature: feat: Create Vehicle management component in Vue - Mon Apr  6 21:35:21 
 Feature: feat: Implement repair order service layer - Mon Apr  6 21:35:23 EAST 2026
 Feature: feat: Add repair order form with dynamic pricing - Mon Apr  6 21:35:26 EAST 2026
 Feature: feat: Create repair status tracking system - Mon Apr  6 21:35:28 EAST 2026
+Feature: feat: Add work order PDF generation with iText - Mon Apr  6 21:35:30 EAST 2026
