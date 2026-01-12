@@ -10,3 +10,4 @@ Feature: feat: Implement repair order service layer - Mon Apr  6 21:29:45 EAST 2
 Feature: feat: Add repair order form with dynamic pricing - Mon Apr  6 21:29:47 EAST 2026
 Feature: feat: Create repair status tracking system - Mon Apr  6 21:29:49 EAST 2026
 Feature: feat: Add work order PDF generation with iText - Mon Apr  6 21:29:52 EAST 2026
+Feature: feat: Implement inventory management CRUD - Mon Apr  6 21:29:54 EAST 2026
