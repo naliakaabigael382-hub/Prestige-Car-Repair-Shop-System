@@ -9,3 +9,4 @@ Bug Fix: fix: Resolve MySQL syntax error in custom query - Mon Apr  6 21:29:46 E
 Bug Fix: fix: Fix LazyInitializationException with @EntityGraph - Mon Apr  6 21:29:48 EAST 2026
 Bug Fix: fix: Resolve enum mapping error in JPA - Mon Apr  6 21:29:51 EAST 2026
 Bug Fix: fix: Fix PDF generation encoding error - Mon Apr  6 21:29:53 EAST 2026
+Bug Fix: fix: Resolve version error in Spring Data JPA - Mon Apr  6 21:29:55 EAST 2026
