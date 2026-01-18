@@ -13,3 +13,4 @@ Feature: feat: Add work order PDF generation with iText - Mon Apr  6 21:29:52 EA
 Feature: feat: Implement inventory management CRUD - Mon Apr  6 21:29:54 EAST 2026
 Feature: feat: Add low stock alert service - Mon Apr  6 21:29:57 EAST 2026
 Feature: feat: Create invoice generator with tax calculation - Mon Apr  6 21:29:59 EAST 2026
+Feature: feat: Add payment processing and receipt printing - Mon Apr  6 21:30:02 EAST 2026
