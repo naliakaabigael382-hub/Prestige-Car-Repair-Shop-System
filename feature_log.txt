@@ -52,3 +52,4 @@ Feature: feat: Add low stock alert service - Mon Apr  6 21:35:35 EAST 2026
 Feature: feat: Create invoice generator with tax calculation - Mon Apr  6 21:35:37 EAST 2026
 Feature: feat: Add payment processing and receipt printing - Mon Apr  6 21:35:39 EAST 2026
 Feature: feat: Implement email notification service - Mon Apr  6 21:35:42 EAST 2026
+Feature: feat: Create admin dashboard with Chart.js - Mon Apr  6 21:35:44 EAST 2026
