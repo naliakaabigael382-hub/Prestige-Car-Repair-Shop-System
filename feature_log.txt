@@ -16,3 +16,4 @@ Feature: feat: Create invoice generator with tax calculation - Mon Apr  6 21:29:
 Feature: feat: Add payment processing and receipt printing - Mon Apr  6 21:30:02 EAST 2026
 Feature: feat: Implement email notification service - Mon Apr  6 21:30:04 EAST 2026
 Feature: feat: Create admin dashboard with Chart.js - Mon Apr  6 21:30:07 EAST 2026
+Feature: feat: Add monthly revenue report endpoint - Mon Apr  6 21:30:09 EAST 2026
