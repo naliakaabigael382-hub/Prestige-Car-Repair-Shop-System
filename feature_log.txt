@@ -56,3 +56,4 @@ Feature: feat: Create admin dashboard with Chart.js - Mon Apr  6 21:35:44 EAST 2
 Feature: feat: Add monthly revenue report endpoint - Mon Apr  6 21:35:47 EAST 2026
 Feature: feat: Implement Excel export with Apache POI - Mon Apr  6 21:35:49 EAST 2026
 Feature: feat: Add mechanic assignment to repair orders - Mon Apr  6 21:35:52 EAST 2026
+Feature: feat: Create appointment scheduling calendar - Mon Apr  6 21:35:54 EAST 2026
