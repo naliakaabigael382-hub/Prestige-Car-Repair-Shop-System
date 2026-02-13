@@ -19,3 +19,4 @@ Bug Fix: fix: Resolve SQL query performance issue - Mon Apr  6 21:30:10 EAST 202
 Bug Fix: fix: Fix POI dependency version conflict - Mon Apr  6 21:30:13 EAST 2026
 Bug Fix: fix: Resolve foreign key constraint error - Mon Apr  6 21:30:15 EAST 2026
 Bug Fix: fix: Fix Vue FullCalendar integration error - Mon Apr  6 21:30:17 EAST 2026
+Bug Fix: fix: Resolve scheduler cron expression error - Mon Apr  6 21:30:20 EAST 2026
