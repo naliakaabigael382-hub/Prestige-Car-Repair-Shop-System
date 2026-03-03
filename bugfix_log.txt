@@ -61,3 +61,4 @@ Bug Fix: fix: Resolve foreign key constraint error - Mon Apr  6 21:35:53 EAST 20
 Bug Fix: fix: Fix Vue FullCalendar integration error - Mon Apr  6 21:35:55 EAST 2026
 Bug Fix: fix: Resolve scheduler cron expression error - Mon Apr  6 21:35:58 EAST 2026
 Bug Fix: fix: Fix method security expression error - Mon Apr  6 21:36:00 EAST 2026
+Bug Fix: fix: Fix Specification predicate logic error - Mon Apr  6 21:36:04 EAST 2026
