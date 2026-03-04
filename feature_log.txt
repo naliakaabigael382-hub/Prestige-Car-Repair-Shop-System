@@ -61,3 +61,4 @@ Feature: feat: Add service reminder notifications - Mon Apr  6 21:35:57 EAST 202
 Feature: feat: Implement role-based access control - Mon Apr  6 21:35:59 EAST 2026
 Feature: feat: Add API documentation with Swagger/OpenAPI - Mon Apr  6 21:36:02 EAST 2026
 Feature: feat: Create customer search with specifications - Mon Apr  6 21:36:03 EAST 2026
+Feature: feat: Add vehicle history tracking - Mon Apr  6 21:36:06 EAST 2026
