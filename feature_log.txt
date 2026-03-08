@@ -63,3 +63,4 @@ Feature: feat: Add API documentation with Swagger/OpenAPI - Mon Apr  6 21:36:02 
 Feature: feat: Create customer search with specifications - Mon Apr  6 21:36:03 EAST 2026
 Feature: feat: Add vehicle history tracking - Mon Apr  6 21:36:06 EAST 2026
 Feature: feat: Implement WebSocket for real-time updates - Mon Apr  6 21:36:08 EAST 2026
+Feature: feat: Add dark mode toggle in Vue - Mon Apr  6 21:36:11 EAST 2026
