@@ -31,3 +31,4 @@ Feature: feat: Create responsive navigation menu - Mon Apr  6 21:30:35 EAST 2026
 Feature: feat: Add loading skeletons and spinners - Mon Apr  6 21:30:37 EAST 2026
 Feature: feat: Implement form validation with VeeValidate - Mon Apr  6 21:30:39 EAST 2026
 Feature: feat: Add image upload for vehicle photos - Mon Apr  6 21:30:42 EAST 2026
+Feature: feat: Create search and filter components - Mon Apr  6 21:30:44 EAST 2026
