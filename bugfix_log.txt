@@ -69,3 +69,4 @@ Bug Fix: fix: Fix Vue router history mode error - Mon Apr  6 21:36:15 EAST 2026
 Bug Fix: fix: Resolve Axios interceptor error - Mon Apr  6 21:36:17 EAST 2026
 Bug Fix: fix: Fix async validation timing error - Mon Apr  6 21:36:20 EAST 2026
 Bug Fix: fix: Fix multipart file size limit error - Mon Apr  6 21:36:23 EAST 2026
+Bug Fix: fix: Resolve debounce search error - Mon Apr  6 21:36:25 EAST 2026
