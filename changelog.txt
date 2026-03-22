@@ -11,3 +11,4 @@ Update: docs: Update README with deployment guide - Mon Apr  6 21:31:07 EAST 202
 Update: chore: Add Vue.js 3.5.0 with Vite configuration - Mon Apr  6 21:35:05 EAST 2026
 Update: chore: Install Vue Router and Pinia store - Mon Apr  6 21:35:20 EAST 2026
 Update: test: Add JUnit tests for service layer - Mon Apr  6 21:36:26 EAST 2026
+Update: test: Write Vue component tests with Vitest - Mon Apr  6 21:36:28 EAST 2026
