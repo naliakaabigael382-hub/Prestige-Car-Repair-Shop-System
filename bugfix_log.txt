@@ -32,3 +32,4 @@ Bug Fix: fix: Fix multipart file size limit error - Mon Apr  6 21:30:43 EAST 202
 Bug Fix: fix: Resolve debounce search error - Mon Apr  6 21:30:45 EAST 2026
 Bug Fix: fix: Fix test case assertion errors - Mon Apr  6 21:30:48 EAST 2026
 Bug Fix: fix: Resolve test environment configuration error - Mon Apr  6 21:30:50 EAST 2026
+Bug Fix: fix: Fix N+1 query problem - Mon Apr  6 21:30:53 EAST 2026
