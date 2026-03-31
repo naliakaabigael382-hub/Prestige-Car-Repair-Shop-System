@@ -15,3 +15,4 @@ Update: test: Write Vue component tests with Vitest - Mon Apr  6 21:36:28 EAST 2
 Update: perf: Optimize database queries with indexing - Mon Apr  6 21:36:31 EAST 2026
 Update: chore: Update Spring Boot to 3.4.2 - Mon Apr  6 21:36:33 EAST 2026
 Update: docs: Update API documentation - Mon Apr  6 21:36:38 EAST 2026
+Update: chore: Clean up unused dependencies - Mon Apr  6 21:36:39 EAST 2026
