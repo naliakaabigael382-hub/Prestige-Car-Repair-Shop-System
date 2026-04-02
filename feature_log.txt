@@ -70,3 +70,4 @@ Feature: feat: Implement form validation with VeeValidate - Mon Apr  6 21:36:19 
 Feature: feat: Add image upload for vehicle photos - Mon Apr  6 21:36:21 EAST 2026
 Feature: feat: Create search and filter components - Mon Apr  6 21:36:24 EAST 2026
 Feature: feat: Add backup and restore functionality - Mon Apr  6 21:36:35 EAST 2026
+Feature: feat: Add performance monitoring with Micrometer - Mon Apr  6 21:36:41 EAST 2026
