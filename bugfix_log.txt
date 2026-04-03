@@ -76,3 +76,4 @@ Bug Fix: fix: Fix N+1 query problem - Mon Apr  6 21:36:32 EAST 2026
 Bug Fix: fix: Resolve dependency conflict after upgrade - Mon Apr  6 21:36:34 EAST 2026
 Bug Fix: fix: Fix backup file corruption error - Mon Apr  6 21:36:36 EAST 2026
 Bug Fix: fix: Resolve Spring Boot Actuator endpoint error - Mon Apr  6 21:36:40 EAST 2026
+Bug Fix: fix: Fix metrics export configuration error - Mon Apr  6 21:36:42 EAST 2026
