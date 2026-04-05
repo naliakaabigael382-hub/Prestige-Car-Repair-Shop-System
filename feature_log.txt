@@ -34,3 +34,4 @@ Feature: feat: Add image upload for vehicle photos - Mon Apr  6 21:30:42 EAST 20
 Feature: feat: Create search and filter components - Mon Apr  6 21:30:44 EAST 2026
 Feature: feat: Add backup and restore functionality - Mon Apr  6 21:30:56 EAST 2026
 Feature: feat: Add performance monitoring with Micrometer - Mon Apr  6 21:31:02 EAST 2026
+Feature: feat: Add health check endpoint - Mon Apr  6 21:31:09 EAST 2026
