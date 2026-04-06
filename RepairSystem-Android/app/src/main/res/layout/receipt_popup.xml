@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/receipt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receipt ID: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/receipt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/receipt_payment_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Date: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/receipt_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:textStyle="bold" />
+</LinearLayout>

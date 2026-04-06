@@ -1,0 +1,73 @@
+# =========================
+# GLOBAL
+# =========================
+.DS_Store
+*.log
+*.tmp
+*.bak
+
+# =========================
+# ANDROID / GRADLE
+# =========================
+*.iml
+.gradle/
+local.properties
+/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# =========================
+# BACKEND (SPRING / JAVA)
+# =========================
+HELP.md
+build/
+bin/
+out/
+
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# =========================
+# FRONTEND (NODE / VUE / REACT)
+# =========================
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+
+# =========================
+# EDITORS
+# =========================
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.iws
+*.ipr

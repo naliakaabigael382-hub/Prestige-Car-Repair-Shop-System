@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/car1"
+        android:title="" />
+
+    <item android:id="@+id/car2"
+        android:title="" />
+
+    <item android:id="@+id/car3"
+        android:title="" />
+
+    <item android:id="@+id/car4"
+        android:title="" />
+</menu>

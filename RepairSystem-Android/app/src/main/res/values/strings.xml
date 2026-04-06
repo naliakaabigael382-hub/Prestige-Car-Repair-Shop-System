@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Prestige Repairs</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="email_hint">Email</string>
+    <string name="logIn_button">Login</string>
+    <string name="password_hint">Password</string>
+
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+
+    <string name="login_title">Log In</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="homepage_title">Home Page</string>
+
+    <string name="signUp_button">SignUp</string>
+    <string name="new_name">Name</string>
+    <string name="new_email">Email</string>
+    <string name="new_password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="new_phone">Phone</string>
+    <string name="new_address">Address</string>
+    <string name="new_debit">Debit</string>
+    <string name="new_credit">Credit</string>
+
+
+    <string name="title_activity_booking_appointment">BookingAppointment</string>
+    <string name="selectMech_button"> Select Mechanic </string>
+    <string name="selectMech_hint"> Select a Mechanic </string>
+    <string name="title_activity_log_in">Log In</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+
+    <string name="profile"> Good Morning!</string>
+    <string name="profile_name">  Name</string>
+    <string name="name"> Customer Name</string>
+    <string name="profile_password"> Password </string>
+    <string name="profile_phone"> Phone </string>
+    <string name="phone"> 514-974-2735</string>
+    <string name="profile_email"> Email </string>
+    <string name="email"> customer@mail.com</string>
+    <string name="profile_address"> Address </string>
+    <string name="address"> 123 Avenue Boulevard</string>
+    <string name="profile_credit"> Credit</string>
+    <string name="profile_debit"> Debit</string>
+    <string name="credit"> 123 456 789</string>
+    <string name="debit"> 012 345 678</string>
+    <string name="title_activity_home_page">Prestige Repairs</string>
+    <string name="title_activity_view_appointments">ViewAppointments</string>
+
+    <!-- Make Payment -->
+    <string name="payment_email_hint">Email</string>
+    <string name="address_hint">Address</string>
+    <string name="credit_hint">Credit</string>
+    <string name="debit_hint">Debit</string>
+    <string name="amount_hint">Amount</string>
+    <string name="makePayment_button">Make Payment</string>
+    <string name="title_activity_make_payment">MakePayment</string>
+
+
+    <string-array name="car_types">
+        <item>Convertible</item>
+        <item>Coupe</item>
+        <item>Hatchback</item>
+        <item>Minivan</item>
+        <item>Sedan</item>
+        <item>Sports</item>
+        <item>Suv</item>
+        <item>Stationwagon</item>
+        <item>Truck</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+</resources>

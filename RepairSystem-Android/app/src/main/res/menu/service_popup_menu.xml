@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/CarRepair"
+        android:title="CarRepair" />
+
+    <item android:id="@+id/OilChange"
+        android:title="OilChange" />
+
+    <item android:id="@+id/RegularCheckup"
+        android:title="RegularCheckup" />
+
+    <item android:id="@+id/CarWash"
+        android:title="CarWash" />
+
+    <item android:id="@+id/TireChange"
+        android:title="TireChange" />
+
+    <item android:id="@+id/RoadsideAssistance"
+        android:title="RoadsideAssistance" />
+
+    <item android:id="@+id/Towing"
+        android:title="Towing" />
+
+    <item android:id="@+id/CarInspection"
+        android:title="CarInspection" />
+
+    <item android:id="@+id/Other"
+        android:title="Other" />
+
+
+
+</menu>

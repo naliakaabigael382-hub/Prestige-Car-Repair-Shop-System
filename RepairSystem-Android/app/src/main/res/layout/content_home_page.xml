@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/purple_500"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".homePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/homePageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".homePage"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutHome"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/toolbarHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/upcomingAppointmentsHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="My Appointments"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                />
+
+            <ListView
+                android:id="@+id/appointmentListHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_500"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="bottom"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutHome"/>
+
+        <Button
+            android:id="@+id/paymentHome"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Pay"
+            android:textSize="11dp"
+            android:onClick="toPayment"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarHome"
+            app:layout_constraintEnd_toStartOf="@+id/logoutHome"
+            app:layout_constraintStart_toEndOf="@+id/homeHome"
+            app:layout_constraintTop_toTopOf="@+id/toolbarHome"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bookAppointmentHome"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toBook"
+            android:text="Book"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarHome"
+            app:layout_constraintEnd_toStartOf="@+id/homeHome"
+            app:layout_constraintStart_toEndOf="@+id/editProfileHome"
+            app:layout_constraintTop_toTopOf="@+id/toolbarHome"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/editProfileHome"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toEditProfile"
+            android:text="Profile"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarHome"
+            app:layout_constraintEnd_toStartOf="@+id/bookAppointmentHome"
+            app:layout_constraintStart_toStartOf="@+id/toolbarHome"
+            app:layout_constraintTop_toTopOf="@+id/toolbarHome" />
+
+        <Button
+            android:id="@+id/homeHome"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/white"
+            android:onClick="toEditProfile"
+            android:text="Home"
+            android:textSize="11dp"
+            android:textColor="#4D00EA"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarHome"
+            app:layout_constraintEnd_toStartOf="@+id/paymentHome"
+            app:layout_constraintStart_toEndOf="@+id/bookAppointmentHome"
+            app:layout_constraintTop_toTopOf="@+id/toolbarHome"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logoutHome"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="bye"
+            android:text="logout"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paymentHome"
+            app:layout_constraintTop_toTopOf="@+id/toolbarHome"
+            app:strokeColor="#FFFFFF" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- ////////////////// BOOK APPOINTMENT ////////////////// -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bookAppointmentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:hint="Select Date"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_timer2"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/tv_timer2"
+            android:layout_width="409dp"
+            android:layout_height="127dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/editbox_background"
+            android:drawableTop="@drawable/ic_time"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/addTimeSlot"
+            app:layout_constraintTop_toBottomOf="@id/et_date"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/addTimeSlot"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:stateListAnimator="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_timer2"
+            app:layout_constraintVertical_bias="0.329" />
+
+        <Button
+            android:id="@+id/selectServiceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="servicePopup"
+            android:text="Select Service "
+            app:layout_constraintBottom_toTopOf="@id/addTimeSlot"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectMechBtn"
+            app:layout_constraintVertical_bias="0.529" />
+
+        <Button
+            android:id="@+id/selectMechBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="showPopup"
+            android:text="Select Mechanic"
+            app:layout_constraintTop_toBottomOf="@id/selectServiceBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/selectCarBtn"
+
+            app:layout_constraintVertical_bias="0.629" />
+
+
+        <!--Menu Button goes here-->
+
+        <Button
+            android:id="@+id/selectCarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="carPopup"
+            android:text="Select Car"
+            app:layout_constraintBottom_toTopOf="@id/bookAppBtn"
+            app:layout_constraintTop_toBottomOf="@id/selectServiceBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.729" />
+
+        <!--
+        ***
+        THE POSITION OF ADD CAR BUTTON MIGHT LOOK WEIRD ON THE DESIGN EDITOR,
+        BUT IT LOOKS CORRECT ON THE APP SO PLZ DON'T CHANGE
+        ****
+        -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addCarBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:visibility="visible"
+            app:fabCustomSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/selectCarBtn"
+            app:layout_constraintTop_toTopOf="@id/selectCarBtn"
+            app:layout_constraintLeft_toRightOf="@id/selectCarBtn"
+
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="ExtraText,MissingConstraints" />
+
+
+
+        <Button
+            android:id="@+id/bookAppBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffc34d"
+            android:text="Book Appointment"
+            app:layout_constraintBottom_toTopOf="@id/toolbarBook"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectCarBtn" />
+
+
+        <!-- book app ends here-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_500"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="bottom"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/paymentBook"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Pay"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarBook"
+            app:layout_constraintEnd_toStartOf="@+id/logoutBook"
+            app:layout_constraintStart_toEndOf="@+id/homeBook"
+            app:layout_constraintTop_toTopOf="@+id/toolbarBook"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bookAppointmentBook"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/white"
+            android:onClick="toBook"
+            android:text="Book"
+            android:textSize="11dp"
+            android:textColor="#4D00EA"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarBook"
+            app:layout_constraintEnd_toStartOf="@+id/homeBook"
+            app:layout_constraintStart_toEndOf="@+id/editProfileBook"
+            app:layout_constraintTop_toTopOf="@+id/toolbarBook"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/editProfileBook"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toEditProfile"
+            android:text="Profile"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarBook"
+            app:layout_constraintEnd_toStartOf="@+id/bookAppointmentBook"
+            app:layout_constraintStart_toStartOf="@+id/toolbarBook"
+            app:layout_constraintTop_toTopOf="@+id/toolbarBook" />
+
+        <Button
+            android:id="@+id/homeBook"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toEditProfile"
+            android:text="Home"
+            android:textSize="11dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarBook"
+            app:layout_constraintEnd_toStartOf="@+id/paymentBook"
+            app:layout_constraintStart_toEndOf="@+id/bookAppointmentBook"
+            app:layout_constraintTop_toTopOf="@+id/toolbarBook"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logoutBook"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="bye"
+            android:text="logout"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarBook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paymentBook"
+            app:layout_constraintTop_toTopOf="@+id/toolbarBook"
+            app:strokeColor="#FFFFFF" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/makePaymentView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPay"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/toolbarPay">
+
+            <TextView
+                android:id="@+id/billingHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Billing Information"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <!-- Form Fields for Payment -->
+            <EditText
+                android:id="@+id/payment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/payment_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/payment_email_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/payment_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/address_hint"
+                android:inputType="textPostalAddress" />
+
+            <Spinner
+                android:id="@+id/appointment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+            <EditText
+                android:id="@+id/payment_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/credit_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/payment_debit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/debit_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/payment_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/amount_hint"
+                android:inputType="text" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Debit or Credit" />
+
+            <Button
+                android:id="@+id/payment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="#ffc34d"
+                android:text="@string/makePayment_button"
+                android:onClick="makePayment" />
+
+
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FF0000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/receiptHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Receipts"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+
+            <Spinner
+                android:id="@+id/appointment_spinner_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/download_receipt_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Receipt"
+                android:layout_marginTop="16dp" />
+
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarPay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_500"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="bottom"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutPay"/>
+
+        <Button
+            android:id="@+id/paymentPay"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/white"
+            android:text="Pay"
+            android:textSize="11dp"
+            android:textColor="#4D00EA"
+            android:onClick="toPayment"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarPay"
+            app:layout_constraintEnd_toStartOf="@+id/logoutPay"
+            app:layout_constraintStart_toEndOf="@+id/homePay"
+            app:layout_constraintTop_toTopOf="@+id/toolbarPay"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bookAppointmentPay"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toBook"
+            android:text="Book"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarPay"
+            app:layout_constraintEnd_toStartOf="@+id/homePay"
+            app:layout_constraintStart_toEndOf="@+id/editProfilePay"
+            app:layout_constraintTop_toTopOf="@+id/toolbarPay"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/editProfilePay"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toEditProfile"
+            android:text="Profile"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarPay"
+            app:layout_constraintEnd_toStartOf="@+id/bookAppointmentPay"
+            app:layout_constraintStart_toStartOf="@+id/toolbarPay"
+            app:layout_constraintTop_toTopOf="@+id/toolbarPay" />
+
+        <Button
+            android:id="@+id/homePay"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toEditProfile"
+            android:text="Home"
+            android:textSize="11dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarPay"
+            app:layout_constraintEnd_toStartOf="@+id/paymentPay"
+            app:layout_constraintStart_toEndOf="@+id/bookAppointmentPay"
+            app:layout_constraintTop_toTopOf="@+id/toolbarPay"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logoutPay"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="bye"
+            android:text="logout"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paymentPay"
+            app:layout_constraintTop_toTopOf="@+id/toolbarPay"
+            app:strokeColor="#FFFFFF" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/editProfileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollViewEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/toolbarEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/linearLayoutEdit">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="136dp"
+                    android:layout_height="119dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/default_profile" />
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/profile_name"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/cNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/passwordText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/profile_password"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/cPasswordText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:text="@string/profile_password" />
+
+                <TextView
+                    android:id="@+id/phoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/profile_phone" />
+
+                <EditText
+                    android:id="@+id/cPhoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:text="@string/phone" />
+
+                <TextView
+                    android:id="@+id/emailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/profile_email"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/cEmailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/profile_address"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/cAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textWebEmailAddress"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/creditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/profile_credit"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/cCreditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:text="@string/credit" />
+
+                <TextView
+                    android:id="@+id/debitText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Debit"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/cDebitText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:text="@string/debit" />
+
+
+                <Button
+                    android:id="@+id/profileUpdateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="updateProfile"
+                    android:backgroundTint="#ffc34d"
+                    android:text="Update Profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_500"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="bottom"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollViewEdit"/>
+
+        <Button
+            android:id="@+id/paymentEdit"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Pay"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarEdit"
+            app:layout_constraintEnd_toStartOf="@+id/logoutEdit"
+            app:layout_constraintStart_toEndOf="@+id/homeEdit"
+            app:layout_constraintTop_toTopOf="@+id/toolbarEdit"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bookAppointmentEdit"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toBook"
+            android:text="Book"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarEdit"
+            app:layout_constraintEnd_toStartOf="@+id/homeEdit"
+            app:layout_constraintStart_toEndOf="@+id/editProfileEdit"
+            app:layout_constraintTop_toTopOf="@+id/toolbarEdit"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/editProfileEdit"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/white"
+            android:onClick="toEditProfile"
+            android:text="Profile"
+            android:textColor="#4D00EA"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarEdit"
+            app:layout_constraintEnd_toStartOf="@+id/bookAppointmentEdit"
+            app:layout_constraintStart_toStartOf="@+id/toolbarEdit"
+            app:layout_constraintTop_toTopOf="@+id/toolbarEdit" />
+
+        <Button
+            android:id="@+id/homeEdit"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="toEditProfile"
+            android:text="Home"
+            android:textSize="11dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarEdit"
+            app:layout_constraintEnd_toStartOf="@+id/paymentEdit"
+            app:layout_constraintStart_toEndOf="@+id/bookAppointmentEdit"
+            app:layout_constraintTop_toTopOf="@+id/toolbarEdit"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logoutEdit"
+            android:layout_width="87dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="bye"
+            android:text="logout"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paymentEdit"
+            app:layout_constraintTop_toTopOf="@+id/toolbarEdit"
+            app:strokeColor="#FFFFFF" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
